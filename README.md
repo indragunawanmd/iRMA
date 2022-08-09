@@ -1,2 +1,2 @@
 # iRMA
-data dan file file irma
+Catatan tentang iRMA
