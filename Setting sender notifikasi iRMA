@@ -1,0 +1,27 @@
+1. cek admin irs bagian sender outbox, di tujuan cari yang awalan app: kalau di nama terminalnya kosong berarti dia blm pasang sender
+
+2. copy file Config.DAT, libeay32.DLL, ssleay32.DLL yang ada di folder program files (x86) -> Integreted Reload System ke data c
+
+3. copy file libeay32.DLL dan ssleay32.DLL ke folder data c -> Windows -> System32 dan ke folder SysWOW64 
+
+4. edit file Config.DAT yang ada di folder c tadi , copy coding di bawah ini : 
+0
+https://api.aviana.id:2021/public/sendpush/serverid 
+0
+https://api2.aviana.id:2021/public/sendpush/serverid
+jika api tidak mau pakai yang api2
+
+dan ganti serveridnya berdasarkan serverid user ( jika server idnya ada spasi suruh hapus dlu karena ga boleh isi spasi)
+
+5. lalu copy file servicesenderh2h.exe yang ada di grup irma support ke data c
+
+6. buka cmd run as administrator arahkan ke folder c dahulu cd c:\
+
+7. lanjut dengan ketik coding
+   servicesenderh2h.exe -install
+8. setelah selesai install , lalu buka service dengan tombol windows+r , lalu start service senderh2h
+
+9. lalu cek di admin irs apakah sudah sukses semua statusnya jika sudah suruh usernya coba notifnya
+
+
+SELESAI
